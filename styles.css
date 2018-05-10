@@ -10,7 +10,7 @@ h1 {
 }
 
 .box {
-    width:200px;
+    width:300px;
     padding:50px;
     position: absolute;
     top: 50%;
@@ -32,6 +32,34 @@ h1 {
     outline:none;
     color:#F1f1f1;
     font-size: 20px;
-    border-radius:10px;
+    border-radius:20px;
     transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus {
+    border-radius:0px;
+    width:250px;
+    border-color:#55efc4;
+
+}
+
+.box input[type = "submit"]{
+    border:0;
+    background:none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #55efc4;
+    padding:15px 40px;
+    outline:none;
+    color:#F1f1f1;
+    font-size: 20px;
+    border-radius:20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type = "submit"]:hover {
+    background: #55efc4;
+    color:#000;
 }
